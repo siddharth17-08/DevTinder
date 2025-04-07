@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "tailwind-scrollbar-hide";
+
+@theme {
+    --font-inter: "Inter", sans-serif;
+    --color-color-1: #1a1a1d;
+}
+
+html {
+    @apply font-inter;
+}
+
+#root {
+    @apply flex flex-col min-h-screen;
+}
+
+body {
+    @apply bg-color-1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.user-card {
+    grid-row: 1;
+    grid-column: 1;
+}
