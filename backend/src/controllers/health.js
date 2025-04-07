@@ -6,5 +6,4 @@ const basicHealthStatus = (req, res) => {
         message: "Api Endpoints are working properly :)"
     });
 };
-
 export { basicHealthStatus };
